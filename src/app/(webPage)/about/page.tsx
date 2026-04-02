@@ -33,7 +33,7 @@ const AboutSection = () => {
               {/* يمكنك وضع صورتك هنا أو أيقونة برمجية كبيرة */}
               <Cpu size={150} className="text-white/10 absolute animate-pulse" />
               <div className="z-10 text-center p-8">
-                 <h3 className="text-6xl font-black mb-2 tracking-tighter">5+</h3>
+                 <h3 className="text-6xl font-black mb-2 tracking-tighter mt-10">5+</h3>
                  <p className="text-gray-400 text-xl font-medium">سنوات من الشغف بالتطوير</p>
               </div>
             </div>
@@ -64,9 +64,9 @@ const AboutSection = () => {
             </div>
 
             <div className="pt-4">
-              <button className="px-8 py-3 bg-white text-black font-bold rounded-full hover:bg-blue-500 hover:text-white transition-all duration-300">
+              {/* <button className="px-8 py-3 bg-white text-black font-bold rounded-full hover:bg-blue-500 hover:text-white transition-all duration-300">
                 مشاهدة سيرتي الذاتية
-              </button>
+              </button> */}
             </div>
           </div>
 

@@ -1,14 +1,14 @@
 const Skills = () => {
     const skillCategories = [
       { title: "الواجهات الأمامية", skills: ["React", "Next.js", "Tailwind CSS", "Framer Motion"] },
-      { title: "الأنظمة الخلفية", skills: ["Node.js", "Express", "SQL / NoSQL", "Rest API"] },
-      { title: "الأدوات", skills: ["Git / GitHub", "Figma", "Docker", "Postman"] }
+      { title: "الأنظمة الخلفية", skills: ["Node.js", "Express", "SQL / NoSQL", "Rest API" ,"laravel"] },
+      { title: "الأدوات", skills: ["Git / GitHub",  "Postman"] }
     ];
   
     return (
-      <section id="skills" className="py-24 bg-[#0a0a0a]">
+      <section id="skills" className="py-24 bg-[#0a0a0a] ">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-white mb-12 text-center">ترسانتي التقنية</h2>
+          <h2 className="text-3xl font-bold text-white mb-12 text-center mt-10">ترسانتي التقنية</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {skillCategories.map((cat, i) => (

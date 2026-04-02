@@ -1,0 +1,47 @@
+﻿src/app/(adminPages)/admin/add-project/page.tsx(17,30): error TS7006: Parameter 'e' implicitly has an 'any' type.
+src/app/(adminPages)/admin/add-project/page.tsx(20,23): error TS2345: Argument of type 'string' is not assignable to parameter of type 'SetStateAction<null>'.
+src/app/(adminPages)/admin/add-project/page.tsx(136,19): error TS2322: Type 'string' is not assignable to type 'number'.
+src/app/(adminPages)/admin/notification/page.tsx(32,24): error TS2345: Argument of type '(prev: never[]) => { id: any; title: any; message: any; time: string; type: any; isRead: boolean; }[]' is not assignable to parameter of type 'SetStateAction<never[]>'.
+  Type '(prev: never[]) => { id: any; title: any; message: any; time: string; type: any; isRead: boolean; }[]' is not assignable to type '(prevState: never[]) => never[]'.
+    Type '{ id: any; title: any; message: any; time: string; type: any; isRead: boolean; }[]' is not assignable to type 'never[]'.
+      Type '{ id: any; title: any; message: any; time: string; type: any; isRead: boolean; }' is not assignable to type 'never'.
+src/app/(adminPages)/admin/notification/page.tsx(42,22): error TS2345: Argument of type '(prev: never[]) => any[]' is not assignable to parameter of type 'SetStateAction<never[]>'.
+  Type '(prev: never[]) => any[]' is not assignable to type '(prevState: never[]) => never[]'.
+    Type 'any[]' is not assignable to type 'never[]'.
+      Type 'any' is not assignable to type 'never'.
+src/app/(adminPages)/admin/notification/page.tsx(42,47): error TS2698: Spread types may only be created from object types.
+src/app/(adminPages)/admin/notification/page.tsx(45,22): error TS7006: Parameter 'id' implicitly has an 'any' type.
+src/app/(adminPages)/admin/notification/page.tsx(46,49): error TS2339: Property 'id' does not exist on type 'never'.
+src/app/(adminPages)/admin/notification/page.tsx(49,20): error TS7006: Parameter 'type' implicitly has an 'any' type.
+src/app/(adminPages)/admin/notification/page.tsx(66,45): error TS2339: Property 'isRead' does not exist on type 'never'.
+src/app/(adminPages)/admin/notification/page.tsx(68,49): error TS2339: Property 'isRead' does not exist on type 'never'.
+src/app/(adminPages)/admin/notification/page.tsx(100,37): error TS2339: Property 'id' does not exist on type 'never'.
+src/app/(adminPages)/admin/notification/page.tsx(101,123): error TS2339: Property 'isRead' does not exist on type 'never'.
+src/app/(adminPages)/admin/notification/page.tsx(104,43): error TS2339: Property 'type' does not exist on type 'never'.
+src/app/(adminPages)/admin/notification/page.tsx(109,73): error TS2339: Property 'isRead' does not exist on type 'never'.
+src/app/(adminPages)/admin/notification/page.tsx(110,39): error TS2339: Property 'title' does not exist on type 'never'.
+src/app/(adminPages)/admin/notification/page.tsx(112,115): error TS2339: Property 'time' does not exist on type 'never'.
+src/app/(adminPages)/admin/notification/page.tsx(115,37): error TS2339: Property 'message' does not exist on type 'never'.
+src/app/(adminPages)/admin/notification/page.tsx(120,59): error TS2339: Property 'id' does not exist on type 'never'.
+src/app/(webPage)/contact/page.tsx(6,18): error TS7016: Could not find a declaration file for module 'lucide-react/dist/esm/icons/mail'. 'C:/Users/InfoCenter/Desktop/project_protfolio/portfolio/portfolio/node_modules/lucide-react/dist/esm/icons/mail.js' implicitly has an 'any' type.
+  If the 'lucide-react' package actually exposes this module, try adding a new declaration (.d.ts) file containing `declare module 'lucide-react/dist/esm/icons/mail';`
+src/app/(webPage)/contact/page.tsx(8,19): error TS7016: Could not find a declaration file for module 'lucide-react/dist/esm/icons/phone'. 'C:/Users/InfoCenter/Desktop/project_protfolio/portfolio/portfolio/node_modules/lucide-react/dist/esm/icons/phone.js' implicitly has an 'any' type.
+  If the 'lucide-react' package actually exposes this module, try adding a new declaration (.d.ts) file containing `declare module 'lucide-react/dist/esm/icons/phone';`
+src/app/(webPage)/contact/page.tsx(10,18): error TS7016: Could not find a declaration file for module 'lucide-react/dist/esm/icons/send'. 'C:/Users/InfoCenter/Desktop/project_protfolio/portfolio/portfolio/node_modules/lucide-react/dist/esm/icons/send.js' implicitly has an 'any' type.
+  If the 'lucide-react' package actually exposes this module, try adding a new declaration (.d.ts) file containing `declare module 'lucide-react/dist/esm/icons/send';`
+src/app/(webPage)/contact/page.tsx(12,20): error TS7016: Could not find a declaration file for module 'lucide-react/dist/esm/icons/github'. 'C:/Users/InfoCenter/node_modules/lucide-react/dist/esm/icons/github.js' implicitly has an 'any' type.
+  If the 'lucide-react' package actually exposes this module, try adding a new declaration (.d.ts) file containing `declare module 'lucide-react/dist/esm/icons/github';`
+src/app/(webPage)/contact/page.tsx(14,22): error TS7016: Could not find a declaration file for module 'lucide-react/dist/esm/icons/linkedin'. 'C:/Users/InfoCenter/node_modules/lucide-react/dist/esm/icons/linkedin.js' implicitly has an 'any' type.
+  If the 'lucide-react' package actually exposes this module, try adding a new declaration (.d.ts) file containing `declare module 'lucide-react/dist/esm/icons/linkedin';`
+src/app/(webPage)/contact/page.tsx(17,21): error TS7016: Could not find a declaration file for module 'lucide-react/dist/esm/icons/twitter'. 'C:/Users/InfoCenter/node_modules/lucide-react/dist/esm/icons/twitter.js' implicitly has an 'any' type.
+  If the 'lucide-react' package actually exposes this module, try adding a new declaration (.d.ts) file containing `declare module 'lucide-react/dist/esm/icons/twitter';`
+src/app/_components/footer.tsx(3,20): error TS7016: Could not find a declaration file for module 'lucide-react/dist/esm/icons/github'. 'C:/Users/InfoCenter/node_modules/lucide-react/dist/esm/icons/github.js' implicitly has an 'any' type.
+  If the 'lucide-react' package actually exposes this module, try adding a new declaration (.d.ts) file containing `declare module 'lucide-react/dist/esm/icons/github';`
+src/app/_components/footer.tsx(4,22): error TS7016: Could not find a declaration file for module 'lucide-react/dist/esm/icons/linkedin'. 'C:/Users/InfoCenter/node_modules/lucide-react/dist/esm/icons/linkedin.js' implicitly has an 'any' type.
+  If the 'lucide-react' package actually exposes this module, try adding a new declaration (.d.ts) file containing `declare module 'lucide-react/dist/esm/icons/linkedin';`
+src/app/_components/footer.tsx(5,21): error TS7016: Could not find a declaration file for module 'lucide-react/dist/esm/icons/twitter'. 'C:/Users/InfoCenter/node_modules/lucide-react/dist/esm/icons/twitter.js' implicitly has an 'any' type.
+  If the 'lucide-react' package actually exposes this module, try adding a new declaration (.d.ts) file containing `declare module 'lucide-react/dist/esm/icons/twitter';`
+src/app/_components/footer.tsx(6,18): error TS7016: Could not find a declaration file for module 'lucide-react/dist/esm/icons/mail'. 'C:/Users/InfoCenter/Desktop/project_protfolio/portfolio/portfolio/node_modules/lucide-react/dist/esm/icons/mail.js' implicitly has an 'any' type.
+  If the 'lucide-react' package actually exposes this module, try adding a new declaration (.d.ts) file containing `declare module 'lucide-react/dist/esm/icons/mail';`
+src/app/_components/footer.tsx(7,19): error TS7016: Could not find a declaration file for module 'lucide-react/dist/esm/icons/heart'. 'C:/Users/InfoCenter/Desktop/project_protfolio/portfolio/portfolio/node_modules/lucide-react/dist/esm/icons/heart.js' implicitly has an 'any' type.
+  If the 'lucide-react' package actually exposes this module, try adding a new declaration (.d.ts) file containing `declare module 'lucide-react/dist/esm/icons/heart';`

@@ -1,10 +1,10 @@
 import React from 'react';
-// الاستيراد المباشر يحل مشاكل "Export doesn't exist" في Turbopack
-import Github from 'lucide-react/dist/esm/icons/github';
-import Linkedin from 'lucide-react/dist/esm/icons/linkedin';
-import Twitter from 'lucide-react/dist/esm/icons/twitter';
-import Mail from 'lucide-react/dist/esm/icons/mail';
-import Heart from 'lucide-react/dist/esm/icons/heart';
+// import { Github } from 'lucide-react';
+// import { Linkedin } from 'lucide-react';
+// import { Twitter } from 'lucide-react';
+import { Mail } from 'lucide-react';
+import { Heart } from 'lucide-react';
+import Link from 'next/link';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -22,15 +22,15 @@ const Footer = () => {
             <p className="text-sm leading-relaxed mb-6">
               مطور برمجيات متخصص في بناء تجارب رقمية استثنائية.
             </p>
-            <div className="flex space-x-4 rtl:space-x-reverse">
+            <div className="flex space-x-4 space-x-reverse rtl:space-x-reverse">
               <a href="#" className="hover:text-blue-400 transition-colors">
-                <Github size={20} /> 
+                {/* <Github size={20} /> */}
               </a>
               <a href="#" className="hover:text-blue-400 transition-colors">
-                <Linkedin size={20} />
+                {/* <Linkedin size={20} /> */}
               </a>
               <a href="#" className="hover:text-blue-400 transition-colors">
-                <Twitter size={20} />
+                {/* <Twitter size={20} /> */}
               </a>
             </div>
           </div>
@@ -39,9 +39,9 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-bold mb-6">روابط سريعة</h3>
             <ul className="space-y-4 text-sm">
-              <li><a href="/" className="hover:text-white transition-colors">الرئيسية</a></li>
-              <li><a href="#projects" className="hover:text-white transition-colors">أعمالي</a></li>
-              <li><a href="#about" className="hover:text-white transition-colors">عني</a></li>
+              <li><Link href="/" className="hover:text-white transition-colors">الرئيسية</Link></li>
+              <li><Link href="/projects" className="hover:text-white transition-colors">أعمالي</Link></li>
+              <li><Link href="/about" className="hover:text-white transition-colors">عني</Link></li>
             </ul>
           </div>
 
@@ -57,10 +57,10 @@ const Footer = () => {
           {/* عمود التواصل */}
           <div>
             <h3 className="text-white font-bold mb-6">تواصل معي</h3>
-            <a href="mailto:your@email.com" className="flex items-center gap-2 text-white hover:text-blue-400">
+            <Link href="mailto:your@email.com" className="flex items-center gap-2 text-white hover:text-blue-400">
               <Mail size={18} />
-              <span>your@email.com</span>
-            </a>
+              <span>bouladabedlrazak@gmail.com</span>
+            </Link>
           </div>
 
         </div>
@@ -75,5 +75,4 @@ const Footer = () => {
     </footer>
   );
 };
-// this is footer
 export default Footer;
