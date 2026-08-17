@@ -1,7 +1,7 @@
 export const navLinks = [
-    { name: 'الرئيسية', href: '/' },
-    { name: 'أعمالي', href: '/projects' },
-    { name: 'المهارات', href: '/skills' },
-    { name: 'عني', href: '/about' },
-    { name: 'تواصل معي', href: '/contact' },
-  ];
+  { href: '/', label: 'الرئيسية' },
+  { href: '/projects', label: 'أعمالي' },
+  { href: '/skills', label: 'المهارات' },
+  { href: '/about', label: 'عني' },
+  { href: '/contact', label: 'تواصل' },
+];

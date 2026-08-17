@@ -1,20 +1,21 @@
-"use client"; // تحويل الملف لـ Client Component لاستخدام usePathname
+'use client';
 
-import { Geist, Geist_Mono } from "next/font/google";
-import { usePathname } from "next/navigation"; // استيراد هوك المسار
-import "./globals.css";
-
-import Footer from "./_components/footer";
-import Navbar from "./_components/navbar";
+import { Geist, Geist_Mono } from 'next/font/google';
+import { usePathname } from 'next/navigation';
+import './globals.css';
+import QueryProvider from '@/components/query-provider';
+import { ThemeProvider } from '@/components/theme-provider';
+import Navbar from '@/app/_components/layout/navbar';
+import Footer from '@/app/_components/layout/footer';
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+  variable: '--font-geist-sans',
+  subsets: ['latin'],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
 });
 
 export default function RootLayout({
@@ -23,27 +24,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const pathname = usePathname();
-
-  // فحص ما إذا كان الرابط الحالي يخص لوحة التحكم (Admin)
-  // هذا الشرط يتحقق إذا كان الرابط هو /admin أو أي صفحة فرعية له مثل /admin/users
-  const isAdminPage = pathname?.startsWith("/admin");
+  const isAdminPage = pathname?.startsWith('/admin');
+  const isLoginPage = pathname?.startsWith('/login');
 
   return (
     <html
       lang="ar"
       dir="rtl"
+      suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        {/* إذا لم تكن صفحة أدمن، اظهر الـ Navbar */}
-        {!isAdminPage && <Navbar />}
-        
-        <main className="flex-grow">
-          {children}
-        </main>
-
-        {/* إذا لم تكن صفحة أدمن، اظهر الـ Footer */}
-        {!isAdminPage && <Footer />}
+        <ThemeProvider>
+          <QueryProvider>
+            {!isAdminPage && !isLoginPage && <Navbar />}
+            <main className="flex-grow">{children}</main>
+            {!isAdminPage && !isLoginPage && <Footer />}
+          </QueryProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
